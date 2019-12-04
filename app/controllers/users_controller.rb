@@ -1,7 +1,20 @@
 class UsersController < ApplicationController
     def index
         users = User.all 
-        render json: users.to_json
+        render json: users.to_json({
+      except: [:created_at, :updated_at],
+      :include => {
+    :users_events => {
+      except: [:created_at, :updated_at]
+    }
+  },
+      :include => {
+        :events => {
+          except: [:created_at, :updated_at]
+        }
+
+      }
+    }
     end
     
     def create
@@ -12,7 +25,17 @@ class UsersController < ApplicationController
     def login
         user = User.find_by(name: params["name"])
         if user 
-            render json: user.to_json
+            render json: user.to_json({
+                except: [:created_at, :updated_at],
+                :include => {
+                  :events => {
+                    except: [:created_at, :updated_at]
+                  },
+                  :users_events => {
+                    except: [:created_at, :updated_at]
+                  }
+                }
+              })
         end
     end
 
