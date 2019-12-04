@@ -8,4 +8,13 @@ class UsersController < ApplicationController
         newUser = User.create(name: params["name"], password: params["phone_number"], email: params["email"])
         render json: newUser
     end
+
+    def login
+        user = User.find_by(name: params["name"])
+        if user 
+            render json: user.to_json
+        end
+    end
+
+    
 end
