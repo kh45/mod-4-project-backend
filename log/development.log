@@ -479,3 +479,228 @@ Processing by UsersController#login as JSON
 Completed 200 OK in 92ms (Views: 11.0ms | ActiveRecord: 2.8ms | Allocations: 337074)
 
 
+Started POST "/users" for ::1 at 2019-12-04 10:07:00 -0500
+  [1m[35m (47.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Joseph", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"Joseph", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (42.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (18.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Joseph"], ["email", "yo"], ["created_at", "2019-12-04 15:07:00.887304"], ["updated_at", "2019-12-04 15:07:00.887304"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 136ms (Views: 2.1ms | ActiveRecord: 121.6ms | Allocations: 6212)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:07:09 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Joseph", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"Joseph", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Joseph"], ["email", "yo"], ["created_at", "2019-12-04 15:07:09.052380"], ["updated_at", "2019-12-04 15:07:09.052380"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (48.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 56ms (Views: 0.9ms | ActiveRecord: 49.3ms | Allocations: 2302)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:07:36 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Joseph", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"Joseph", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Joseph"], ["email", "yo"], ["created_at", "2019-12-04 15:07:36.380914"], ["updated_at", "2019-12-04 15:07:36.380914"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 51ms (Views: 0.6ms | ActiveRecord: 44.1ms | Allocations: 2302)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:09:29 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Yoseph", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"Yoseph", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (19.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yoseph"], ["email", "yo"], ["created_at", "2019-12-04 15:09:29.196768"], ["updated_at", "2019-12-04 15:09:29.196768"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 35ms (Views: 0.9ms | ActiveRecord: 26.7ms | Allocations: 2302)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:09:52 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"yo", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (26.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (11.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "yo"], ["email", "yo"], ["created_at", "2019-12-04 15:09:52.999582"], ["updated_at", "2019-12-04 15:09:52.999582"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 48ms (Views: 0.7ms | ActiveRecord: 39.9ms | Allocations: 2284)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:11:33 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"yoseph", "password"=>"[FILTERED]", "email"=>"jo", "user"=>{"name"=>"yoseph", "password"=>"[FILTERED]", "email"=>"jo"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "yoseph"], ["email", "jo"], ["created_at", "2019-12-04 15:11:33.570575"], ["updated_at", "2019-12-04 15:11:33.570575"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (115.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 123ms (Views: 0.5ms | ActiveRecord: 116.7ms | Allocations: 2284)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:11:57 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"joseph", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"joseph", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (10.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "joseph"], ["email", "yo"], ["created_at", "2019-12-04 15:11:57.750745"], ["updated_at", "2019-12-04 15:11:57.750745"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 24ms (Views: 0.5ms | ActiveRecord: 15.1ms | Allocations: 2284)
+
+
+Started POST "/users" for ::1 at 2019-12-04 10:14:34 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hello", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"hello", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hello"], ["email", "yo"], ["created_at", "2019-12-04 15:14:34.205880"], ["updated_at", "2019-12-04 15:14:34.205880"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 66ms (Views: 6.8ms | ActiveRecord: 43.4ms | Allocations: 2284)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:15:18 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 40ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 2764)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:22:25 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 798)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:23:12 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 711)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:27:26 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 18ms (Views: 4.5ms | ActiveRecord: 1.0ms | Allocations: 711)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:28:08 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 727)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:28:59 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:31:53 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 3.7ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:41:15 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 797)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:41:24 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:43:17 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:48:47 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:52:44 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 711)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:54:12 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:54:28 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 10:57:17 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 710)
+
+
+Started POST "/login" for ::1 at 2019-12-04 11:18:06 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `login'
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 796)
+
+
