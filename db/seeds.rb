@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Event.destroy_all
+UserEvent.destroy_all
+
+
+user1 = User.create(name: "George")
+event1 = Event.create(title: "Mayhem")
+
+UserEvent.create(event_id: event1.id, user_id: user1.id)
+
+

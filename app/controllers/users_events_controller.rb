@@ -1,3 +1,0 @@
-class UsersEventsController < ApplicationController
-   
-end
