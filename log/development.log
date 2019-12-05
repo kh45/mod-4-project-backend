@@ -1248,3 +1248,1172 @@ Processing by UsersController#create as JSON
 Completed 200 OK in 63ms (Views: 2.8ms | ActiveRecord: 45.8ms | Allocations: 5814)
 
 
+Started POST "/login" for ::1 at 2019-12-04 15:00:21 -0500
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 111ms (Views: 0.1ms | ActiveRecord: 70.8ms | Allocations: 12571)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:04:13 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.5ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 2375)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:05:06 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 2375)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:06:21 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 2375)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:17:39 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 4.2ms | Allocations: 2492)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:19:45 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 26ms (Views: 0.7ms | ActiveRecord: 2.6ms | Allocations: 2357)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:21:25 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (7.8ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 20.5ms | Allocations: 2357)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:27:44 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.9ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 2480)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:28:35 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (1.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 2357)
+
+
+Started POST "/login" for ::1 at 2019-12-04 15:41:13 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 2479)
+
+
+Started POST "/login" for ::1 at 2019-12-04 17:25:27 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (20.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 23.2ms | Allocations: 2480)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/flatironschool/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started POST "/login" for ::1 at 2019-12-04 17:54:09 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (42.7ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 212ms (Views: 0.2ms | ActiveRecord: 159.6ms | Allocations: 12571)
+
+
+Started POST "/events" for ::1 at 2019-12-04 17:54:20 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"date"=>"2019-12-13"}}
+Completed 500 Internal Server Error in 54113173ms (ActiveRecord: 0.0ms | Allocations: 60179)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/events_controller.rb:7:in `create'
+Started POST "/login" for ::1 at 2019-12-05 09:08:58 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (2.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 128ms (Views: 0.2ms | ActiveRecord: 76.4ms | Allocations: 12568)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:09:39 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"date"=>"2019-12-13"}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 4713)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Event.):
+  
+app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (44.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (265.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "nightlife_development"[0m
+  [1m[35m (235.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "nightlife_test"[0m
+  [1m[35m (561.9ms)[0m  [1m[35mCREATE DATABASE "nightlife_development" ENCODING = 'unicode'[0m
+  [1m[35m (618.6ms)[0m  [1m[35mCREATE DATABASE "nightlife_test" ENCODING = 'unicode'[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6911384658799595310)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20191202163624)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "password" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191202163624"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEvents (20191202164200)
+  [1m[35m (42.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying, "date" character varying, "start" character varying, "venue" character varying, "image" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191202164200"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserEvents (20191202164328)
+  [1m[35m (40.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.6ms)[0m  [1m[35mCREATE TABLE "user_events" ("id" bigserial primary key, "event_id" integer, "user_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191202164328"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-05 14:13:31.805070"], ["updated_at", "2019-12-05 14:13:31.805070"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6911384658799595310)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mUserEvent Load (0.8ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "George"], ["created_at", "2019-12-05 14:13:37.921382"], ["updated_at", "2019-12-05 14:13:37.921382"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/users" for ::1 at 2019-12-05 09:14:39 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"yo", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "yo"], ["email", "yo"], ["created_at", "2019-12-05 14:14:39.892887"], ["updated_at", "2019-12-05 14:14:39.892887"]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 200 OK in 17ms (Views: 0.8ms | ActiveRecord: 11.2ms | Allocations: 6212)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:14:56 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 14:14:56.413782"], ["updated_at", "2019-12-05 14:14:56.413782"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 16.7ms | Allocations: 7778)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/events_controller.rb:4:in `create'
+Started POST "/events" for ::1 at 2019-12-05 09:15:33 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-25", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-25", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest West"], ["date", "2020-07-25"], ["start", "19:00:00"], ["venue", "SoFi Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 14:15:33.809971"], ["updated_at", "2019-12-05 14:15:33.809971"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+Started POST "/login" for ::1 at 2019-12-05 09:20:27 -0500
+Completed 500 Internal Server Error in 294126ms (ActiveRecord: 8.4ms | Allocations: 140469)
+
+
+Started POST "/login" for ::1 at 2019-12-05 09:20:27 -0500
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/events_controller.rb:5:in `create'
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (1.0ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 444ms (Views: 1.4ms | ActiveRecord: 45.7ms | Allocations: 1652996)
+
+
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (1.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 350ms (Views: 1.8ms | ActiveRecord: 32.4ms | Allocations: 2092715)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:27:44 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (2.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 14:27:44.563041"], ["updated_at", "2019-12-05 14:27:44.563041"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+Started POST "/login" for ::1 at 2019-12-05 09:28:24 -0500
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.3ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 22.6ms | Allocations: 12541)
+
+
+Started POST "/login" for ::1 at 2019-12-05 09:30:09 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.5ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2375)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:30:16 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (1.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 14:30:16.371533"], ["updated_at", "2019-12-05 14:30:16.371533"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.7ms | Allocations: 7011)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/events_controller.rb:4:in `create'
+Started POST "/events" for ::1 at 2019-12-05 09:30:47 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-25", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-25", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest West"], ["date", "2020-07-25"], ["start", "19:00:00"], ["venue", "SoFi Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 14:30:47.751088"], ["updated_at", "2019-12-05 14:30:47.751088"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (2.4ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 5], ["user_id", 2], ["created_at", "2019-12-05 14:30:47.819985"], ["updated_at", "2019-12-05 14:30:47.819985"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 28964ms (ActiveRecord: 37.6ms | Allocations: 66869)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/events_controller.rb:6:in `create'
+Started POST "/login" for ::1 at 2019-12-05 09:41:09 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.4ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 159ms (Views: 0.1ms | ActiveRecord: 53.7ms | Allocations: 20267)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:41:17 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (2.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 14:41:17.850033"], ["updated_at", "2019-12-05 14:41:17.850033"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 6], ["user_id", 2], ["created_at", "2019-12-05 14:41:17.907912"], ["updated_at", "2019-12-05 14:41:17.907912"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 65ms (Views: 0.5ms | ActiveRecord: 46.7ms | Allocations: 7352)
+
+
+Started POST "/login" for ::1 at 2019-12-05 09:43:27 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.8ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2787)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:43:40 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 14:43:40.298975"], ["updated_at", "2019-12-05 14:43:40.298975"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (3.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (1.5ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 7], ["user_id", 2], ["created_at", "2019-12-05 14:43:40.330231"], ["updated_at", "2019-12-05 14:43:40.330231"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 39ms (Views: 0.8ms | ActiveRecord: 14.9ms | Allocations: 6654)
+
+
+Started POST "/login" for ::1 at 2019-12-05 09:53:54 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.3ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 113ms (Views: 0.7ms | ActiveRecord: 3.4ms | Allocations: 16239)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:54:06 -0500
+  
+SyntaxError (/Users/flatironschool/Development/code/Mod4/Mod4Project/mod-4-project-backend/app/controllers/events_controller.rb:13: syntax error, unexpected ',', expecting =>
+...son: {event: event, user_event, userevent}
+...                              ^):
+  
+app/controllers/events_controller.rb:13: syntax error, unexpected ',', expecting =>
+app/controllers/events_controller.rb:13: syntax error, unexpected ',', expecting =>
+Started POST "/events" for ::1 at 2019-12-05 09:54:26 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-25", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-25", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (2.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest West"], ["date", "2020-07-25"], ["start", "19:00:00"], ["venue", "SoFi Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 14:54:26.656732"], ["updated_at", "2019-12-05 14:54:26.656732"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (4.0ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 8], ["user_id", 2], ["created_at", "2019-12-05 14:54:26.719868"], ["updated_at", "2019-12-05 14:54:26.719868"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 90ms (Views: 0.5ms | ActiveRecord: 37.2ms | Allocations: 20009)
+
+
+Started POST "/login" for ::1 at 2019-12-05 09:56:02 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (7.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (12.1ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 60ms (Views: 0.3ms | ActiveRecord: 40.5ms | Allocations: 3945)
+
+
+Started POST "/events" for ::1 at 2019-12-05 09:56:43 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 14:56:43.576428"], ["updated_at", "2019-12-05 14:56:43.576428"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 9], ["user_id", 2], ["created_at", "2019-12-05 14:56:43.662464"], ["updated_at", "2019-12-05 14:56:43.662464"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 93ms (Views: 1.1ms | ActiveRecord: 45.1ms | Allocations: 6637)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:00:19 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (8.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (2.9ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 13.0ms | Allocations: 3391)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:00:31 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (1.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:00:31.566444"], ["updated_at", "2019-12-05 15:00:31.566444"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (5.2ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 10], ["user_id", 2], ["created_at", "2019-12-05 15:00:31.593622"], ["updated_at", "2019-12-05 15:00:31.593622"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 45ms (Views: 1.5ms | ActiveRecord: 20.8ms | Allocations: 6638)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:01:28 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (70.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (42.8ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 176ms (Views: 0.9ms | ActiveRecord: 115.0ms | Allocations: 3597)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:01:47 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (2.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:01:47.292833"], ["updated_at", "2019-12-05 15:01:47.292833"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (41.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 11], ["user_id", 2], ["created_at", "2019-12-05 15:01:47.355916"], ["updated_at", "2019-12-05 15:01:47.355916"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 47.0ms | Allocations: 6635)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:04:15 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (31.9ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:04:15.951351"], ["updated_at", "2019-12-05 15:04:15.951351"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (2.9ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 12], ["user_id", 2], ["created_at", "2019-12-05 15:04:15.996143"], ["updated_at", "2019-12-05 15:04:15.996143"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 55ms (Views: 0.9ms | ActiveRecord: 38.3ms | Allocations: 6633)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:05:05 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (5.5ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 12.8ms | Allocations: 4009)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:06:09 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"yo", "password"=>"[FILTERED]", "user"=>{"name"=>"yo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "yo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (3.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (56.6ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 60.7ms | Allocations: 4009)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:06:26 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"2", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:06:26.057732"], ["updated_at", "2019-12-05 15:06:26.057732"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 13], ["user_id", 2], ["created_at", "2019-12-05 15:06:26.098610"], ["updated_at", "2019-12-05 15:06:26.098610"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 21.1ms | Allocations: 6633)
+
+
+Started POST "/users" for ::1 at 2019-12-05 10:09:21 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"David", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (42.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Create (32.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "David"], ["email", "yo"], ["created_at", "2019-12-05 15:09:21.760546"], ["updated_at", "2019-12-05 15:09:21.760546"]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 200 OK in 89ms (Views: 0.6ms | ActiveRecord: 76.5ms | Allocations: 2397)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:09:37 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:09:37.539335"], ["updated_at", "2019-12-05 15:09:37.539335"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (2.0ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 14], ["user_id", 3], ["created_at", "2019-12-05 15:09:37.556496"], ["updated_at", "2019-12-05 15:09:37.556496"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 75ms (Views: 0.6ms | ActiveRecord: 6.5ms | Allocations: 6637)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:09:41 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest East"], ["date", "2020-08-01"], ["start", "19:00:00"], ["venue", "Gillette Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:09:41.468685"], ["updated_at", "2019-12-05 15:09:41.468685"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 15], ["user_id", 3], ["created_at", "2019-12-05 15:09:41.489964"], ["updated_at", "2019-12-05 15:09:41.489964"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 29ms (Views: 1.6ms | ActiveRecord: 9.3ms | Allocations: 6636)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:09:43 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-26", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-26", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest West"], ["date", "2020-07-26"], ["start", "19:00:00"], ["venue", "SoFi Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:09:43.277032"], ["updated_at", "2019-12-05 15:09:43.277032"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 16], ["user_id", 3], ["created_at", "2019-12-05 15:09:43.309291"], ["updated_at", "2019-12-05 15:09:43.309291"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 41ms (Views: 1.2ms | ActiveRecord: 11.8ms | Allocations: 6633)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:11:25 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (2.1ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:13:06 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"test1", "password"=>"[FILTERED]", "user"=>{"name"=>"test1", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "test1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 204 No Content in 3ms (ActiveRecord: 0.7ms | Allocations: 550)
+
+
+Started POST "/users" for ::1 at 2019-12-05 10:13:17 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"test1", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"test1", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test1"], ["email", "yo"], ["created_at", "2019-12-05 15:13:17.834185"], ["updated_at", "2019-12-05 15:13:17.834185"]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 200 OK in 19ms (Views: 1.0ms | ActiveRecord: 10.5ms | Allocations: 2284)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:13:30 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"4", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:13:30.057185"], ["updated_at", "2019-12-05 15:13:30.057185"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (4.2ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 17], ["user_id", 4], ["created_at", "2019-12-05 15:13:30.077528"], ["updated_at", "2019-12-05 15:13:30.077528"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 29ms (Views: 0.5ms | ActiveRecord: 9.6ms | Allocations: 6633)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:13:31 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"4", "name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest East"], ["date", "2020-08-01"], ["start", "19:00:00"], ["venue", "Gillette Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:13:31.722580"], ["updated_at", "2019-12-05 15:13:31.722580"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 18], ["user_id", 4], ["created_at", "2019-12-05 15:13:31.738380"], ["updated_at", "2019-12-05 15:13:31.738380"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 24ms (Views: 2.7ms | ActiveRecord: 6.2ms | Allocations: 6633)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:13:33 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"4", "name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-26", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-26", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest West"], ["date", "2020-07-26"], ["start", "19:00:00"], ["venue", "SoFi Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:13:33.880282"], ["updated_at", "2019-12-05 15:13:33.880282"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 19], ["user_id", 4], ["created_at", "2019-12-05 15:13:33.897966"], ["updated_at", "2019-12-05 15:13:33.897966"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 27ms (Views: 1.3ms | ActiveRecord: 6.1ms | Allocations: 6633)
+
+
+Started POST "/users" for ::1 at 2019-12-05 10:18:17 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"test2", "password"=>"[FILTERED]", "email"=>"yo", "user"=>{"name"=>"test2", "password"=>"[FILTERED]", "email"=>"yo"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Create (11.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test2"], ["email", "yo"], ["created_at", "2019-12-05 15:18:17.835456"], ["updated_at", "2019-12-05 15:18:17.835456"]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 200 OK in 57ms (Views: 2.0ms | ActiveRecord: 19.4ms | Allocations: 2284)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:18:25 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"5", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:18:25.079365"], ["updated_at", "2019-12-05 15:18:25.079365"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 20], ["user_id", 5], ["created_at", "2019-12-05 15:18:25.103912"], ["updated_at", "2019-12-05 15:18:25.103912"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 35ms (Views: 2.1ms | ActiveRecord: 7.6ms | Allocations: 6633)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:18:29 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"5", "name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (3.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest East"], ["date", "2020-08-01"], ["start", "19:00:00"], ["venue", "Gillette Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:18:29.043069"], ["updated_at", "2019-12-05 15:18:29.043069"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (2.0ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 21], ["user_id", 5], ["created_at", "2019-12-05 15:18:29.120211"], ["updated_at", "2019-12-05 15:18:29.120211"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 86ms (Views: 1.0ms | ActiveRecord: 11.2ms | Allocations: 6637)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:18:30 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"5", "name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-26", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest West", "date"=>"2020-07-26", "start"=>"19:00:00", "venue"=>"SoFi Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest West"], ["date", "2020-07-26"], ["start", "19:00:00"], ["venue", "SoFi Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:18:30.952882"], ["updated_at", "2019-12-05 15:18:30.952882"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 22], ["user_id", 5], ["created_at", "2019-12-05 15:18:30.974992"], ["updated_at", "2019-12-05 15:18:30.974992"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 30ms (Views: 0.5ms | ActiveRecord: 7.8ms | Allocations: 6636)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:21:51 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"david", "password"=>"[FILTERED]", "user"=>{"name"=>"david", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "david"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 204 No Content in 2ms (ActiveRecord: 0.5ms | Allocations: 546)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:21:55 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (32.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (9.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (8.5ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 64ms (Views: 0.3ms | ActiveRecord: 51.0ms | Allocations: 2976)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:24:34 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (13.7ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 16.5ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:26:16 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (5.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (3.5ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 9.4ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:28:54 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (10.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (49.0ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 71ms (Views: 0.2ms | ActiveRecord: 60.4ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:30:50 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (23.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (8.6ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 73ms (Views: 0.4ms | ActiveRecord: 50.9ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:31:28 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (2.7ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 5.9ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:31:55 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (7.3ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 8.2ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:34:33 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (5.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.9ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 38ms (Views: 0.8ms | ActiveRecord: 6.9ms | Allocations: 2975)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:34:52 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.3ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 2975)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:35:10 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (3.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:35:10.585827"], ["updated_at", "2019-12-05 15:35:10.585827"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (1.7ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 23], ["user_id", 3], ["created_at", "2019-12-05 15:35:10.614661"], ["updated_at", "2019-12-05 15:35:10.614661"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 39ms (Views: 0.8ms | ActiveRecord: 11.9ms | Allocations: 6633)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:35:17 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest East"], ["date", "2020-08-01"], ["start", "19:00:00"], ["venue", "Gillette Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:35:17.965553"], ["updated_at", "2019-12-05 15:35:17.965553"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 24], ["user_id", 3], ["created_at", "2019-12-05 15:35:17.989307"], ["updated_at", "2019-12-05 15:35:17.989307"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 85ms (Views: 55.1ms | ActiveRecord: 8.2ms | Allocations: 6636)
+
+
+Started POST "/login" for ::1 at 2019-12-05 10:43:05 -0500
+Processing by UsersController#login as JSON
+  Parameters: {"name"=>"David", "password"=>"[FILTERED]", "user"=>{"name"=>"David", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "David"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "user_events" ON "events"."id" = "user_events"."event_id" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+  [1m[36mUserEvent Load (0.9ms)[0m  [1m[34mSELECT "user_events".* FROM "user_events" WHERE "user_events"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:29:in `login'
+Completed 200 OK in 66ms (Views: 0.6ms | ActiveRecord: 4.0ms | Allocations: 3501)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:44:19 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (3.7ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:44:19.805784"], ["updated_at", "2019-12-05 15:44:19.805784"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 25], ["user_id", 3], ["created_at", "2019-12-05 15:44:19.892637"], ["updated_at", "2019-12-05 15:44:19.892637"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 108ms (Views: 9.9ms | ActiveRecord: 62.6ms | Allocations: 6643)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:44:28 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg", "event"=>{"name"=>"Z100's Jingle Ball Presented by Capital One", "date"=>"2019-12-13", "start"=>"19:00:00", "venue"=>"Madison Square Garden", "image"=>"https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (7.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Z100's Jingle Ball Presented by Capital One"], ["date", "2019-12-13"], ["start", "19:00:00"], ["venue", "Madison Square Garden"], ["image", "https://s1.ticketm.net/dam/a/ee3/b3512369-3758-48a6-b539-a9f78fc8fee3_1166151_TABLET_LANDSCAPE_16_9.jpg"], ["created_at", "2019-12-05 15:44:28.909236"], ["updated_at", "2019-12-05 15:44:28.909236"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (42.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 26], ["user_id", 3], ["created_at", "2019-12-05 15:44:28.975992"], ["updated_at", "2019-12-05 15:44:28.975992"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 73ms (Views: 0.7ms | ActiveRecord: 53.5ms | Allocations: 6636)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:44:36 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (1.4ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest East"], ["date", "2020-08-01"], ["start", "19:00:00"], ["venue", "Gillette Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:44:36.984676"], ["updated_at", "2019-12-05 15:44:36.984676"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 27], ["user_id", 3], ["created_at", "2019-12-05 15:44:37.011144"], ["updated_at", "2019-12-05 15:44:37.011144"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 40ms (Views: 1.1ms | ActiveRecord: 12.6ms | Allocations: 6633)
+
+
+Started POST "/events" for ::1 at 2019-12-05 10:44:41 -0500
+Processing by EventsController#create as JSON
+  Parameters: {"user_id"=>"3", "name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg", "event"=>{"name"=>"Taylor Swift: Lover Fest East", "date"=>"2020-08-01", "start"=>"19:00:00", "venue"=>"Gillette Stadium", "image"=>"https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "start", "venue", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Swift: Lover Fest East"], ["date", "2020-08-01"], ["start", "19:00:00"], ["venue", "Gillette Stadium"], ["image", "https://s1.ticketm.net/dam/a/723/bfed0536-4449-4c64-afac-dcf106902723_1157071_RETINA_PORTRAIT_16_9.jpg"], ["created_at", "2019-12-05 15:44:41.989032"], ["updated_at", "2019-12-05 15:44:41.989032"]]
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:3:in `create'
+  [1m[35m (15.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[36mUserEvent Create (5.2ms)[0m  [1m[32mINSERT INTO "user_events" ("event_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["event_id", 28], ["user_id", 3], ["created_at", "2019-12-05 15:44:42.026593"], ["updated_at", "2019-12-05 15:44:42.026593"]]
+  ↳ app/controllers/events_controller.rb:4:in `create'
+  [1m[35m (43.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:4:in `create'
+Completed 200 OK in 94ms (Views: 1.0ms | ActiveRecord: 68.5ms | Allocations: 6633)
+
+

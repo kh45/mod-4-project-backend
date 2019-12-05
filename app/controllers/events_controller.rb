@@ -1,11 +1,15 @@
 class EventsController < ApplicationController
     def create
-        event = Event.find_by(params[:id])
-        Event.create(params[])
-        render json: event
+        event = Event.create(name: params[:name], date: params[:date], start: params[:start], venue: params[:venue], image: params[:image])
+        userevent = UserEvent.create(event_id: event.id, user_id: params[:user_id])
+        render json: {event: event, user_event: userevent}
     end
 
     def delete
-        event = Event.find_by(params[:id])
+        event = Event.find_by(params[:event_id])
+        event.delete
+        userevent = Event.find_by(params[:user_event_id])
+        userevent.delete
+        render json: {event: event, user_event: userevent}
     end
 end

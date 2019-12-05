@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :users_events, only: [:index, :create, :destroy]
-  resources :events, only: [:index, :show]
+  resources :users_events, only: [:index, :create, :delete]
+  resources :events, only: [:index, :show, :create, :delete]
   resources :users, only: [:show, :index, :create]
 
   post '/login' => 'users#login'

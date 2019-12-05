@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 2019_12_02_164328) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.datetime "date"
-    t.string "location"
-    t.string "genre"
-    t.integer "cost"
+    t.string "name"
+    t.string "date"
+    t.string "start"
+    t.string "venue"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
