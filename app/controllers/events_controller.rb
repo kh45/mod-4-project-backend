@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
     def create
-        event = Event.create(name: params[:name], date: params[:date], start: params[:start], venue: params[:venue], image: params[:image], api_id: params[:api_id])
+        event = Event.create(name: params[:name], date: params[:date], start: params[:start], venue: params[:venue], image: params[:image], api_id: params[:api_id], city: params[:city], state: params[:state])
         userevent = UserEvent.create(event_id: event.id, user_id: params[:user_id])
         render json: {event: event, user_event: userevent}
     end
