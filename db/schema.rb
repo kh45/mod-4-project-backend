@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_12_02_164328) do
     t.string "start"
     t.string "venue"
     t.string "image"
+    t.string "api_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
